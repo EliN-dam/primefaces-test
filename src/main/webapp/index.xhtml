@@ -1,0 +1,20 @@
+<ui:composition template="resources/templates/template.xhtml"
+                xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://xmlns.jcp.org/jsf/html"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:pt="http://xmlns.jcp.org/jsf/passthrough"
+                xmlns:jsf="http://xmlns.jcp.org/jsf"
+                xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui">
+
+    <ui:define name="content">
+
+        <h:form id="frmTest" class="ms-2">
+            <p:outputPanel>
+                <h3 class="mt-3">Page 1</h3>
+                <p:commandButton value="Page 2" icon="pi pi-arrow-circle-right" action="#{testView.forward}" class="mt-5"/>
+            </p:outputPanel>
+        </h:form>
+
+    </ui:define>
+</ui:composition>
